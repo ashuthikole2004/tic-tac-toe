@@ -69,13 +69,15 @@ const winGame = () => {
         console.log("winner", pos1);
         showWinner(pos1);
         disableBox();
+        return true;
       }
     }
   }
 };
 
 const loseGame = () => {
-  if (count == 9) {
+  let winer = winGame();
+  if (count == 9 && !winer) {
     // console.log("You lose");
     lose();
   }
