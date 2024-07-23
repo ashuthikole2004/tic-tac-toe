@@ -42,7 +42,7 @@ const showWinner = (winner) => {
 };
 
 const lose = () => {
-  para.innerText = `You Lose`;
+  para.innerText = `😔,You Lose`;
   para.classList.remove("hide");
 };
 
